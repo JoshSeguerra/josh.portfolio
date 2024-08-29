@@ -201,9 +201,12 @@
     }
     
 }
-
+header{
+	
+}
 body{
-	height: 100%;
+	height: 100svh;
+	margin-bottom: 1000px;
 	background-image: linear-gradient(to left bottom, #000000, #130007, #1d0011, #23001b, #260025, #270024, #280024, #290023, #260018, #21000e, #190004, #0b0000);
 }
 .animated:after {
@@ -223,4 +226,29 @@ body{
   .wlc-img{
 	animation: updown 2s alternate-reverse infinite;
   }
-  
+
+  .image-fly{
+    transition: 0.7s;
+    position: absolute;
+    right:0;
+    top:100;
+    height: 100px;
+    z-index: 1;
+    opacity: 0.8;
+    
+}
+  .main-list-link{
+	color:white;
+  }
+  .list-link {
+    display: none;
+	color:white;
+ 
+}
+  .list-link.active {
+    display: block;
+}
+
+
+
+
