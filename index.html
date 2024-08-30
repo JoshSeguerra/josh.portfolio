@@ -22,7 +22,7 @@
       </script>
     <title>Document</title>
 </head>
-<body class="text-white h-screen bg-gradient-to-b from-fuchsia-900 to-indigo-600 
+<body class="w-[100%] text-white h-screen bg-gradient-to-b from-fuchsia-900 to-indigo-600 
 ">
 <div class="h-full -z-40 w-screen bg-gradient-to-b from-indigo-900 to-purple-900 fixed" >
 
@@ -41,32 +41,31 @@
             <li></li>
         </ul>
     </div> -->
-    <header class="fixed w-full flex opacity-4 bg-gradient-to-l from-fuchsia-900 to-indigo-600 ">
-        <div class="logo">
-            <img src="/images/logo.png" class="w-20"></div>
-        <nav class="text-base  hidden">
-            <a href="">Knowledge</a>
-            <a href="">About</a>
-            <a href="">Project</a>
-            <a href="">Contact</a>
-        </nav>
-        <div class="text-2xl absolute  right-7 top-4 cursor-pointer text-center">
-            <i class="absolute top-2 right-0 text-white fa-solid fa-bars"></i>
+    <header class="fixed z-111111 w-full flex opacity-4 bg-gradient-to-l from-fuchsia-900 to-indigo-600 ">
+        <div class="logo w-full items-center flex flex-row justify-center">
+            <a href="#hero"><img src="/images/logo.png" class="w-14 pt-1"></a>
         </div>
-        <nav class="h-screen w-1/2 flex-col gap-5 text-base bg-gray-900 p-3 text-white hidden">
-            <p class="font-mono text-orange-400">Josh.dev</p>
-            <div class="pt"></div>
+        <a class="absolute left-0 top-5 pl-4"><i id="menu" class="fa-solid fa-bars"></i></a>
+        <!-- <nav class="text-base  hidden">
             <a href="">Knowledge</a>
-            <a href="">About</a>
-            <a href="">Project</a>
+            <a href="#about-me">About</a>
+            <a href="">Projects</a>
             <a href="">Contact</a>
+        </nav> -->
+        
+        <nav id="sidebar" class="delay-1000 h-screen w-1/2 fixed left-0 flex-col gap-5 text-base bg-black p-3 text-white sidebar">
+            <a class="navLink" href="#hero"><p class="cursor-pointer hover:bg-white font-mono text-orange-400">Josh.dev</p></a>
+            <a id="" class="navLinks" href="">Knowledge</a>
+            <a id="" class="navLinks" href="#about-me">About</a>
+            <a id="" class="navLinks" href="">Project</a>
+            <a id="" class="navLinks" href="">Contact</a>
             <div class="absolute right-2 top-1">
-                <a href=""><i class="fa-solid fa-xmark text-xl"></i></a>
-            </div>
+                <i class="fa-solid fa-xmark text-xl cursor-pointer"></i>
+           
         </nav>
     </header>
-    <section class="sm:h-screen m-auto flex justify-between gap-20 flex-col items-center">
-        <div class="hero mt-40">
+    <section id="hero" class="h-auto m-auto flex gap-10 flex-col items-center">
+        <div class="hero mt-24">
             <p class="text-2xl">Hi. My Name is</p>
             <p class="text-[2rem] bg-gradient-to-b from-yellow-500 to-pink-900 bg-clip-text text-transparent">Joshua Seguerra</p>
             <p class="text-2xl">From Philippines</p>
@@ -76,20 +75,19 @@
                 <a class="text-2xl mr-3" href="https://www.linkedin.com/in/joshua-seguerra-522a16220/" target="_blank"><i class=" fa-brands fa-linkedin"></i></a>
             </nav>
         </div>
-        <div class="relative animated">
-            <img class="h-50 w-60 z-10 wlc-img" src="/images/welcome-image.png" alt="">
+        <div class="relative animated ">
+            <img class="h w-52 -z-1 wlc-img" src="/images/welcome-image.png" alt="">
         </div>
 
-      <a href=""><img class="image-fly" src="/images/hireme-avatar.png" alt=""></a>
+      <a href="#name"><img class="image-fly" src="/images/hireme-avatar.png" alt=""></a>
             
-        <div class="absolute bottom-10 -left-3 ">
+        <div class="absolute top-20 opacity-80 -left-3 ">
             <img class="w-28 fly-man" src="/images/image-slide.png" alt="">
         </div>
     </section>
     <div class="h-1">
     </div>
-    <section class="about-me-section sm:h-full" id="about-me" >
-        <div>
+    <section class="about-me-section mt-11 h-auto flex flex-col justify-start" id="about-me" >
             <div class="justify-center mx-10 text-center">
                 <p class="text-[2rem] bg-gradient-to-b from-yellow-500 to-pink-900 bg-clip-text text-transparent">About Me</p>
                 <p class="text-xs">I'm Joshua Seguerra, a Computer Engineering graduate based in Laguna, Philippines, passionate about web development and crafting user-friendly websites. I created "motivara" on Instagram to share motivational content. With experience in video editing and content creation, I'm eager to learn, grow, and contribute to innovative tech projects.</p>
@@ -130,11 +128,11 @@
                 <p class="text-xs">San Pedro College of Business Administration</p>
             </div>
             
-        </div>
     </section>   
     
-    <section class="h-full mt-20">
-        <div class="mx-3 flex justify-center flex-col items-center">
+    <section class="h-auto mt-20">
+        <img class="rocket absolute -z-10 h-20 opacity-80" src="/images/rocket-img.png" alt="">
+        <div class="mx-3 flex justify-center flex-col gap-2 items-center">
             <p class="text-[2rem] bg-gradient-to-b from-yellow-500 to-pink-900 bg-clip-text text-transparent">Front-End Developer</p>
             <p>- What I Do</p>
             <p class="text-center">Knowledgeable in building website using HTML, CSS and JavaScript without frameworks, focusing on core concepts. Currently studying other programming languages to become a full-stack developeh-24r</p>
@@ -142,28 +140,64 @@
         <p class="text-center mt-14">Tech Stacks</p>
         <div class=" mx-10 mt-5 grid grid-cols-3 grid-rows-1 gap-2">
            <div class="relative h-28 w-24 inset-0 rounded-lg -translate-x-1 translate-y-1 bg-gradient-to-br from-pink-500 via-cyan-500 to-violet-500" >
-            <div class="absolute h-[90%] w-[90%] bg-white  top-[5] right-1 rounded-md"><img src="/images/html.png" alt=""></div>
+            <div class="flex flex-col justify-center items-center absolute h-[90%] w-[90%] bg-white  top-[5] right-1 rounded-md text-black"><img class="h-14 mb-2 " src="/images/html.png" alt="">HTML5</div>
            </div>
-           <div class="relative h-28  w-24   inset-0 rounded-lg -translate-x-1 translate-y-1 bg-gradient-to-br from-pink-500 via-cyan-500 to-violet-500">
-            <div class="absolute h-[90%] w-[90%] bg-white  top-[5] right-1 rounded-md"><img src="/images/css-3.png" alt=""></div>
+           <div class=" relative h-28  w-24   inset-0 rounded-lg -translate-x-1 translate-y-1 bg-gradient-to-br from-pink-500 via-cyan-500 to-violet-500">
+            <div class=" flex flex-col justify-center items-center absolute h-[90%] w-[90%] bg-white  top-[5] right-1 rounded-md text-black "><img class="h-14 mb-2" src="/images/css-3.png" alt="">CSS</div>
            </div>
-           <div class="relative h-28 w-24 inset-0 rounded-lg -translate-x-1 translate-y-1 bg-gradient-to-br from-pink-500 via-cyan-500 to-violet-500">
-            <div class="absolute h-[90%] w-[90%] bg-white  top-[5] right-1 rounded-md"><img src="/images/js.png" alt=""></div>
+           <div class=" relative h-28 w-24 inset-0 rounded-lg -translate-x-1 translate-y-1 bg-gradient-to-br from-pink-500 via-cyan-500 to-violet-500">
+            <div class=" flex flex-col justify-center items-center absolute h-[90%] w-[90%] bg-white  top-[5] right-1 rounded-md text-black "><img class="h-14 mb-2" src="/images/js.png" alt="">Javascript</div>
            </div> 
         </div>
         <div class=" mx-10 mt-10 grid grid-flow-col-dense justify-center grid-rows-1 gap-6">
-            <div class="relative h-28 w-24 inset-0 rounded-lg -translate-x-1 translate-y-1 bg-gradient-to-br from-pink-500 via-cyan-500 to-violet-500" >
-             <div class="absolute h-[90%] w-[90%] bg-white  top-[5] right-1 rounded-md"><img src="/images/png-clipart-bootstrap-logo-thumbnail-tech-companies.png" alt=""></div>
+            <div class=" relative h-28 w-24 inset-0 rounded-lg -translate-x-1 translate-y-1 bg-gradient-to-br from-pink-500 via-cyan-500 to-violet-500" >
+             <div class=" mt-0 flex flex-col  justify-center items-center absolute h-[90%] w-[90%] bg-white  top-[5] right-1 rounded-md text-black pb-2"><img class="h-[80px]" src="/images/png-clipart-bootstrap-logo-thumbnail-tech-companies.png" alt="">Bootstrap</div>
             </div>
-            <div class="relative h-28  w-24   inset-0 rounded-lg -translate-x-1 translate-y-1 bg-gradient-to-br from-pink-500 via-cyan-500 to-violet-500">
-             <div class="absolute pt-5 px-2 h-[90%] w-[90%] bg-white  top-[5] right-1 rounded-md"><img class="bg-transparent" src="/images/tailwind.png" alt=""></div>
+            <div class=" relative h-28  w-24   inset-0 rounded-lg -translate-x-1 translate-y-1 bg-gradient-to-br from-pink-500 via-cyan-500 to-violet-500">
+             <div class=" flex flex-col justify-center items-center absolute pt-5 px-2 h-[90%] w-[90%] bg-white  top-[5] right-1 rounded-md text-black pb-1"><img class="h-11 mb-3" src="/images/tailwind.png" alt="">Tailwind</div>
             </div>
             
          </div>
         
         <div></div>
     </section>
+    <section class="myportfolio mx-3 h-auto mt-20 flex flex-col justify-center items-center">
+        <p class="text-[2rem] bg-gradient-to-b from-yellow-500 to-pink-900 bg-clip-text text-transparent">My Portfolio</p>
+        <div class="flex w-98 h-98 flex-col items-center mt-4">
+            <p class="text-xl mb-2">Tank2Tank</p>
+            <video class="w-72 rounded-xl shadow-md" src="/TANK2TANK.mp4" id="videoPlayer" constrols="controls"></video>
+            <div class="flex justify-center items-center mt-3">
+                <img class="w-20" src="/images/pngwing.com.png" alt="">
+            </div>
+            <div class="flex gap-16 mt-3">
+                <a href="">Code <i class="fa-brands fa-github"></i> </a>
+                <a href="">Live Demo <i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+         
+            <p class="text-xs text-center mt-3">Developed a two-player tank battle game titled Tank2Tank using Scratch as part of the CS50 course. The game features strategic gameplay with power-ups like bombs and shields, requiring players to outmaneuver and outsmart their opponent. This project highlights my ability to design interactive and engaging games, showcasing my foundational skills in game development.</p>
+        </div>
+    </section>
+    <section id="contacts" class=" h-auto mb-20 mt-20 flex flex-col justify-center items-center">
+            <div class="flex flex-col justify-center items-center">   
+                <p class="text-[2rem] bg-gradient-to-b from-yellow-500 to-pink-900 bg-clip-text text-transparent">Contact Me</p>
+                <p><i class="fa-solid fa-comment-sms"></i> +6399-3662-3241</p>
+                <p><i class="fa-solid fa-envelope"></i> jsh.seguerra@gmail.com</p>
+                <div>
 
+            </div>
+            <div class="flex text-2xl gap-2 mt-3">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+            </div>
+            <form class=" text-black input-container flex flex-col gap-1" onsubmit="sendEmail(); reset(); return false">
+                <input class="bg-slate-300 text-xs w-80 h-5 rounded-md border-0 mt-5" type="text" id="name" name="name" placeholder="Your Name / Company Name" >
+                <input class="bg-slate-300 text-xs w-80 h-5 rounded-md border-0" type="email" name="email" id="email" placeholder="Email Address">
+                <textarea class="bg-slate-300 text-xs w-80 rounded-md border-0 h-32" name="Message" id="message" placeholder="Write Your Message"></textarea  >
+                <button type="submit" class="btn bg-gradient-to-b from-yellow-500 to-pink-900   border-[1px] mt-3 rounded-md " >Submit</button>
+            </form>
+    </section>
 
 
 
