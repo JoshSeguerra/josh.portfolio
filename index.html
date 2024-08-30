@@ -42,8 +42,8 @@
         </ul>
     </div> -->
     <header class="fixed z-111111 w-full flex opacity-4 bg-gradient-to-l from-fuchsia-900 to-indigo-600 ">
-        <div class="logo w-full items-center flex flex-row justify-center">
-            <a href="#hero"><img src="/images/logo.png" class="w-14 pt-1"></a>
+        <div class="logo w-[100%] items-center flex flex-row justify-center">
+            <a href="#hero"><img src="/images/logo.png" class="h-14 pr-24 pt-1"></a>
         </div>
         <a class="absolute left-0 top-5 pl-4"><i id="menu" class="fa-solid fa-bars"></i></a>
         <!-- <nav class="text-base  hidden">
@@ -65,7 +65,7 @@
         </nav>
     </header>
     <section id="hero" class="h-auto m-auto flex gap-10 flex-col items-center">
-        <div class="hero mt-24">
+        <div class="hero mt-28 flex flex-col justify-center items-center">
             <p class="text-2xl">Hi. My Name is</p>
             <p class="text-[2rem] bg-gradient-to-b from-yellow-500 to-pink-900 bg-clip-text text-transparent">Joshua Seguerra</p>
             <p class="text-2xl">From Philippines</p>
@@ -88,11 +88,11 @@
     <div class="h-1">
     </div>
     <section class="about-me-section mt-11 h-auto flex flex-col justify-start" id="about-me" >
-            <div class="justify-center mx-10 text-center">
+            <div class="justify-center flex flex-col gap-3 mx-10 text-center">
                 <p class="text-[2rem] bg-gradient-to-b from-yellow-500 to-pink-900 bg-clip-text text-transparent">About Me</p>
                 <p class="text-xs">I'm Joshua Seguerra, a Computer Engineering graduate based in Laguna, Philippines, passionate about web development and crafting user-friendly websites. I created "motivara" on Instagram to share motivational content. With experience in video editing and content creation, I'm eager to learn, grow, and contribute to innovative tech projects.</p>
-                <p class="flex justify-center gap-2 mt-2">
-                    <a id="ab-skills" data-target="skills" class="text-base main-list-link cursor-pointer ">Skills</a>
+                <p class="flex justify-center gap-4 mt-2 mb-3">
+                    <a id="ab-skills" data-target="skills" class="text-base main-list-link er ">Skills</a>
                     <a id="ab-experience"data-target="experience" class="text-base main-list-link cursor-pointer ">Experience</a>
                     <a id="ab-education" data-target="education" class="text-base main-list-link cursor-pointer ">Education</a>
                 </p>
@@ -170,14 +170,14 @@
                 <img class="w-20" src="/images/pngwing.com.png" alt="">
             </div>
             <div class="flex gap-16 mt-3">
-                <a href="">Code <i class="fa-brands fa-github"></i> </a>
-                <a href="">Live Demo <i class="fa-solid fa-up-right-from-square"></i></a>
+                <a href="https://scratch.mit.edu/" target="_blank">Code <i class="fa-brands fa-github"></i> </a>
+                <a href="https://scratch.mit.edu/projects/993276413/" target="_blank"> Demo <i class="fa-solid fa-up-right-from-square"></i></a>
             </div>
          
             <p class="text-xs text-center mt-3">Developed a two-player tank battle game titled Tank2Tank using Scratch as part of the CS50 course. The game features strategic gameplay with power-ups like bombs and shields, requiring players to outmaneuver and outsmart their opponent. This project highlights my ability to design interactive and engaging games, showcasing my foundational skills in game development.</p>
         </div>
     </section>
-    <section id="contacts" class=" h-auto mb-20 mt-20 flex flex-col justify-center items-center">
+    <section id="contacts" class=" h-auto mb-28 mt-20 flex flex-col justify-center items-center">
             <div class="flex flex-col justify-center items-center">   
                 <p class="text-[2rem] bg-gradient-to-b from-yellow-500 to-pink-900 bg-clip-text text-transparent">Contact Me</p>
                 <p><i class="fa-solid fa-comment-sms"></i> +6399-3662-3241</p>
@@ -186,10 +186,10 @@
 
             </div>
             <div class="flex text-2xl gap-2 mt-3">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-square-instagram"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-square-twitter"></i>
+                <a href="https://www.facebook.com/fb.jseguerra/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/_motivara/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/joshua-seguerra-522a16220/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://x.com/?lang=en"><i class="fa-brands fa-square-twitter"></i></a>
             </div>
             <form class=" text-black input-container flex flex-col gap-1" onsubmit="sendEmail(); reset(); return false">
                 <input class="bg-slate-300 text-xs w-80 h-5 rounded-md border-0 mt-5" type="text" id="name" name="name" placeholder="Your Name / Company Name" >
